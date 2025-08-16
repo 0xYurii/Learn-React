@@ -64,9 +64,7 @@ h1 {
   border: 1px solid white;
 }
 
-
+/* 
 .footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
+  align-items: center;
+} */
