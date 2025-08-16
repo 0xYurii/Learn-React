@@ -1,5 +1,8 @@
 export default function Header(){
     return(
-        <header>my traverl Journal</header>
+        <header>
+            <img src="../globe.png" alt="globe icone"/>
+            <h1>my travel journal.</h1>
+        </header>
     )
 }
