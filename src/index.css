@@ -15,3 +15,8 @@ body {
 h1 {
     margin-top: 40px;
 }
+
+
+.nav-list{
+  list-style: none;
+}
