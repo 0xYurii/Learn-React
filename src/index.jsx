@@ -26,7 +26,7 @@ function Header() {
 
 function MainContent() {
     return (
-        <main>
+        <main className="maincontent">
             <h1 className="h1">Reason I am excited to learn React</h1>
             <ol>
                 <li>React is a popular library, so I will be able to fit in with all the coolest devs out there! 😎</li>
@@ -38,8 +38,8 @@ function MainContent() {
 
 function Footer() {
     return (
-        <footer>
-            <small>© 2024 Ziroll development. All rights reserved.</small>
+        <footer className="footer">
+            <small>© 2024 SkillStack development. All rights reserved.</small>
         </footer>
     )
 }

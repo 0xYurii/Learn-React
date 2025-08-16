@@ -6,11 +6,26 @@
 
 body {
     padding: 10px;
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background: #27292c;
     color: white;
+    display: flex;
+    /* flex-grow: 1; */
+    flex-direction: column;
     /* text-align: center; */
 }
+
+#root{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.maincontent{
+  flex:1;
+}
+
 
 h1 {
     margin-top: 40px;
@@ -33,6 +48,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
+  /* flex-grow: 1; */
 
 }
 .li{
@@ -46,4 +62,11 @@ h1 {
   width: 55px;
   border-radius: 50%;
   border: 1px solid white;
+}
+
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
