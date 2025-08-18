@@ -1,7 +1,7 @@
 import Contact from "./Contact"
 
 
-function App() {
+export default function App() {
     return (
         <div className="contacts">
             <Contact
@@ -32,4 +32,3 @@ function App() {
     )
 }
 
-export default App
