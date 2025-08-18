@@ -19,18 +19,22 @@ export default function App() {
           <Joke
             setup="I got my daughter a fridge for her birthday."
             puchline="I can't wait to see her face light up when she opens it."
+            pun={true}
           />
           <Joke
             setup="How did the hacker escape the police?"
             puchline="He just ransomware!"
+            pun={true}
           />
           <Joke
             setup="Why don't pirates travel on mountain roads?"
             puchline="Scurvy."
+            pun={false}
           />
           <Joke
             setup="What's the best thing about Switzerland?"
             puchline="I don't know, but the flag is a big plus!"
+            pun={true}
           />
         </main>
     )
