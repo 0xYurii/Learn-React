@@ -1,62 +1,36 @@
-
-
+import Header from "./components/Header"
+import Entry from "./components/Entry"
 
 /**
- * Challenge: Think critically - how would you pass in a prop that 
- * isn't a string datatype.
+ * Challenge: pass props to the Entry component to display
+ * its data. See the `data.md` file for each prop name and its
+ * value.
  * 
- * E.g. Say you want each Joke component to receive an "upvotes" 
- * and "downvotes" prop that is a number, as well as a prop with 
- * an array of comments, and a boolean of whether the joke is a 
- * pun (`isPun`).
+ * Then on the Entry component, receive and display the values
+ * for those props. In the end, the page should look the same
+ * as it does now, but without all the hard-coded data in the
+ * component
  */
-
-import Joke from "./Joke";
 
 export default function App() {
     return (
-        <main>
-          <Joke
-            setup="I got my daughter a fridge for her birthday."
-            puchline="I can't wait to see her face light up when she opens it."
-            pun={true}
-          />
-          <Joke
-            setup="How did the hacker escape the police?"
-            puchline="He just ransomware!"
-            pun={true}
-          />
-          <Joke
-            setup="Why don't pirates travel on mountain roads?"
-            puchline="Scurvy."
-            pun={false}
-          />
-          <Joke
-            setup="What's the best thing about Switzerland?"
-            puchline="I don't know, but the flag is a big plus!"
-            pun={true}
-          />
-        </main>
+        <>
+            <Header />
+            <main className="container">
+                <Entry 
+                  img=
+                    {{
+                          src:"https://scrimba.com/links/travel-journal-japan-image-url",
+                          alt:"Mount Fuji"
+                    }}
+                  title="Mount Fuji"
+                  country="Japan"
+                  link="https://www.google.com/maps/place/Mount+Fuji/@35.3606421,138.7170637,15z/data=!3m1!4b1!4m6!3m5!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634!16zL20vMGNrczA?entry=ttu"
+                  dates="12 Jan, 2021 - 24 Jan, 2021"
+                  text="Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists."
+
+                />
+            </main>
+        </>
     )
 }
-
-
-
-/**
- * Challenge: create a page that displays your favorite jokes
- * - Create a Joke component in its own file.
- * - Import and render 4-5 <Joke /> components
- * - Each Joke should receive a "setup" prop and a "punchline" prop
- *   and render those however you'd like
- * - Use your favorite 2-part jokes (setup & punchline), or check
- *   jokes.md file for some examples.
- * 
- * EXTRA CREDIT:
- * Some jokes are only a punchline with no setup:
- * 
- * E.g.: "It’s hard to explain puns to kleptomaniacs because 
- * they always take things literally."
- * 
- * If you don't pass in a "question" prop, how might you make it only 
- * show the punchline?
- */
