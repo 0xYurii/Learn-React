@@ -6,18 +6,14 @@ export default function App() {
 
   const item=data.map((id)=>{
     return(<Entry
-      img={{
-        src:id.img.src,
-        alt:id.img.alt
-      }}
-      title={id.title}
-      country={id.country}
-      googleMapsLink={id.googleMapsLink}
-      dates={id.dates}
-      text={id.text}
+      key={id.id}
+      id={id}
     />)
   })
     return (
-      <main> {item} </main>
+      <>
+      <Header/>
+      <main className="container"> {item} </main>
+      </>
     )
 }
