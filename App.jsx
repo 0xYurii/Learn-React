@@ -7,7 +7,7 @@ export default function App() {
   const item=data.map((id)=>{
     return(<Entry
       key={id.id}
-      id={id}
+      {...id}
     />)
   })
     return (
